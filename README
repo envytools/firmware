@@ -1,0 +1,20 @@
+extract_firmware
+----------------
+
+This tool is for older NVIDIA blob versions. These had netlist
+archives embedded in them with gzip headers, and the video firmware
+was raw data in the object file.
+
+The output of the tool is the video firmware, and optionally, the
+extracted netlists classified by GPU (to potentially use in place of
+the nouveau-made firmware). This classification is only done for very
+specific versions.
+
+scanner
+-------
+
+This is an explorational tool (written in Go!) to search for
+compressed blobs inside of the blob object file. It uses relocation
+data to locate potentially interesting bits of the rodata to search
+through. The outputs are netlist archives, as well as "whole"
+files. These tend to be falcon programs, but some are just data files.
