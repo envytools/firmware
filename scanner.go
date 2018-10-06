@@ -54,7 +54,7 @@ func must(err error) {
 	}
 }
 
-// from https://nv-tegra.nvidia.com/gitweb/?p=linux-nvgpu.git;a=blob;f=drivers/gpu/nvgpu/gk20a/gr_ctx_gk20a.h;hb=refs/tags/tegra-l4t-r28.2#l69
+// from https://nv-tegra.nvidia.com/gitweb/?p=linux-nvgpu.git;a=blob;f=drivers/gpu/nvgpu/gk20a/gr_ctx_gk20a.h;hb=refs/tags/tegra-l4t-r31.0.2#l73
 var names = map[int]string{
 	0: "fecs_data",
 	1: "fecs_inst",
@@ -89,6 +89,7 @@ var names = map[int]string{
 	30: "nvperf_pma",
 	31: "ctxreg_pmrop",
 	32: "ctxreg_pmucgpc",
+	33: "ctxreg_etpc",
 }
 
 type Processor struct {
