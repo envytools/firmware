@@ -90,6 +90,7 @@ var names = map[int]string{
 	31: "ctxreg_pmrop",
 	32: "ctxreg_pmucgpc",
 	33: "ctxreg_etpc",
+	34: "sw_bundle64_init",
 }
 
 type Processor struct {
