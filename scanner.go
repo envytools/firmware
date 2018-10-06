@@ -25,7 +25,7 @@
 // $ go build scanner.go
 // $ ./scanner path/to/nv-kernel.o_binary output-dir
 //
-// Tested on 387.34 and 390.48 blobs. Should work on a wider range.
+// Tested on 387.34, 390.48 and 410.57 blobs. Should work on a wider range.
 //
 // Premise is to parse the relocations table to look for offests into
 // rodata, where the firmware is stored. We assume that rodata is
