@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python
 #
 # Copyright 2019 Jari Kuittinen.
 # Copyright 2013 Ilia Mirkin.
