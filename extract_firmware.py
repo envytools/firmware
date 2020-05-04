@@ -379,13 +379,9 @@ def decompress(prefix, start, s):
         print e
         return False
 
-    with open(prefix, "wb") as f:
-        f.write(data)
-    return True
-
     magic, count = struct.unpack("<II", data[:8])
     if magic != 0:
-        print "Skipping gzip blob at 0x%x (%d bytes)" % (start, len(data))
+        print "Skipping gzip blob at 0x%x (%d bytes), wrong magic: 0x%x" % (start, len(data), magic)
         return False
 
     # Allow valid archives to be skipped
